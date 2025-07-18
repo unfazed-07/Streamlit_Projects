@@ -11,7 +11,6 @@ This is a simple single-page Streamlit app built to explore Streamlit and practi
 ## ▶️ How to Run
 
 Install Streamlit via pip if you haven’t already:
-```bash
+```terminal
 pip install streamlit
-then in the terminal:
 streamlit run ./protfolio.py
