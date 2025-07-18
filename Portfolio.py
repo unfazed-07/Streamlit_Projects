@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 #--Title--
-st.title(''':red[Divyansh Sharma - Protfolio]''')
+st.title(''':red[Divyansh Sharma - Portfolio]''')
 #--Introducation--
 st.markdown("""
 ### :orange[Welcome!]
