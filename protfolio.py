@@ -13,21 +13,21 @@ st.set_page_config(
 )
 
 #--Title--
-st.title("Divyansh Sharma")
+st.title(''':red[Divyansh Sharma - Protfolio]''')
 #--Introducation--
 st.markdown("""
-### Welcome!
-Hi, I'm **Divyansh Sharma**, a Computer Science Unergraduate Student with a strong interest in **Artificial Intelligence and Machine learning**.
+### :orange[Welcome!]
+:orange[Hi, I'm **Divyansh Sharma**, a Computer Science Undergraduate Student with a strong interest in **Artificial Intelligence and Machine learning**.]
 
-Currently, I'm building a strong foundation in **Python**, curently learning Python(OOP), basic Streamlit.This portfolio is a brief and honest summary of what I've learned so far and will be updated regularly as I continue  my learning Journey
+:orange[Currently, I'm building a strong foundation in **Python**, curently learning Python(OOP), basic Streamlit.This portfolio is a brief and honest summary of what I've learned so far and will be updated regularly as I continue  my learning Journey]
 """)
 
 #--Education Section--
 st.markdown("---")
-st.markdown("### 🎓Education")
+st.markdown("### 🎓:orange[Education]")
 edu_data = pd.DataFrame({
         "Qualification": [
-        "B.Tech in CSE (GenAI)",
+        " [B.Tech in CSE (GenAI)",
         "Class 12th", 
         "Class 10th"
     ],
@@ -46,7 +46,7 @@ st.dataframe(edu_data)
 
 #-----Certifications Section-----
 
-st.markdown("### 📃Certifications")
+st.markdown("### :orange[📃Certifications]")
 cert_data = pd.DataFrame({
     "Certificate Name": [
         "Python for Everybody",
@@ -66,7 +66,7 @@ for i, row in cert_data.iterrows():
 
 #---Project Section---#
 
-st.markdown("### 📽️Projects")
+st.markdown("### 📽️:orange[Projects]")
 
 st.markdown("""
 - [**Streamlit Protfolio Website**]() -  A simple interactive web app built using Streamlit library to display my skills, certifications, and learning journey so far. I'm always looking foward to make its interface better as I learn. Check out, clown it for your own if you like. 
@@ -81,7 +81,7 @@ st.markdown("""
 """)
 #---Contact Info
 st.markdown("---")
-st.markdown("##### 🔗 Connect with Me")
+st.markdown("##### 🔗 :orange[Connect with Me]")
 st.markdown('''
 - [GitHub](https://github.com/unfazed-07)
 - [LinkedIn](https://www.linkedin.com/in/divyansh-sharma-5546b3223/)
@@ -89,8 +89,6 @@ st.markdown('''
 - 📧 Email: divyansh_sharma007@hotmail.com
 ''')
 
-
-
-
-
-
+#--SIDEBAR--
+#--SURVEY Button--
+#--LET'S MAKE--
