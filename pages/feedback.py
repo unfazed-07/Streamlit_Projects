@@ -28,14 +28,15 @@ with st.form("feedback_form"):
         st.success('Thanks for Your Feedback!, it has been saved')
 
 # 🔽 Download button for you (admin)
-file_path = "feedback.csv"
-if os.path.exists(file_path):
-    with open(file_path, "rb") as file:
-        st.download_button(
-            label="📥 Download All Feedback (Admin)",
-            data=file,
-            file_name="feedback.csv",
-            mime="text/csv"
-        )
+feedback_df = pd.read_csv("feedback.csv")
+
+# Ask for password
+password = st.text_input("Enter admin password to view feedback", type="password")
+
+# Check against Streamlit secret
+if password == st.secrets["admin"]["password"]:
+    st.download_button("Download All Feedback (Admin)", feedback_df.to_csv(index=False), "feedback.csv")
+elif password:
+    st.warning("Wrong password. Try again.")
 
 
