@@ -69,7 +69,7 @@ for i, row in cert_data.iterrows():
 st.markdown("### 📽️:orange[Projects]")
 
 st.markdown("""
-- [**Stregit amlit Protfolio Website**]() -  A simple interactive web app built using Streamlit library to display my skills, certifications, and learning journey so far. I'm always looking foward to make its interface better as I learn. Check out, clown it for your own if you like. 
+- [**Stregit amlit Protfolio Website**](https://github.com/unfazed-07/basic_streamlit_protfolio) -  A simple interactive web app built using Streamlit library to display my skills, certifications, and learning journey so far. I'm always looking foward to make its interface better as I learn. Check out, clown it for your own if you like. 
 
 - [**PY4E Assignments**](https://github.com/unfazed-07/Python_for_everybody_assignments) - A collection of some of the programming assignments I complete as a part of "Python for Everybody" Specialisation.
 
