@@ -7,7 +7,7 @@ st.caption("🔒 Your feedback is stored privately and will only be used to impr
 with st.form("feedback_form"):
     st.title("Survey Form")
     name=st.text_input("Enter Your Name: (Optional)")
-    role=st.selectbox("Are you a:", ["Student", "Mentor", "Other"])
+    role=st.selectbox("Are you a:", ["Student", "Mentor","Explorer","Other"])
     rating=st.slider("How would you rate my Protfolio", 1, 10)
     comments =st.text_area("Any suggestion or feedback?")
     submit=st.form_submit_button("Submit")
