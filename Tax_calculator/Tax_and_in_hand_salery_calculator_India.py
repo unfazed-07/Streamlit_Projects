@@ -19,6 +19,7 @@ def calculate_tax(taxable_income):
             prev_slab=limit
         else:
             tax+=(taxable_income-prev_slab)*rate
+            break
     cess = tax * 0.04
     return tax + cess
 
