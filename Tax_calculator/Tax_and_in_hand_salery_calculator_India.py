@@ -19,7 +19,12 @@ def calculate_old_tax_regime(taxable_income):
         else:
             tax+=(taxable_income-prev_slab)*rate
             break
+<<<<<<< HEAD
     return tax*1.04 #Cess Included
+=======
+    cess = tax * 0.04
+    return tax + cess
+>>>>>>> c1e7a90141b3b0ce93139e47d6e7b68014129325
 
 
 
@@ -69,6 +74,7 @@ def take_home_salary(CTC, regime):
         "Net Take-Home(Yearly)":f"₹{round(net_salary,2)}",
         "Net Take-Home(Monthly)":f"₹{round(net_salary/12,2)}"
     }
+<<<<<<< HEAD
 with st.container():
     st.title("India Salery Tax Calcurlator")
     #Input of salery
@@ -90,3 +96,18 @@ with st.container():
                     st.write(f"{k}: {v}")
     else:
         st.warning("Please enter your Annual CTC.")
+=======
+#Provide inputs and get 
+with st.container(border=True):
+    st.title("Tax and In-Hand Salary Estimator")
+    salary = st.number_input("Enter your Annual CTC (₹):", min_value=0.0, step=1000.0)
+    if st.button("View Breakdown"):
+        if salary > 0:
+            result = take_home_salery(salary)
+            with st.container(border=True):
+                st.subheader("Salery Breakdown")
+                for key, value in result.items():
+                    st.write(f"{key}: {value}")
+        else:
+            st.warning("Please enter a valid Annual CTC amount.")
+>>>>>>> c1e7a90141b3b0ce93139e47d6e7b68014129325
