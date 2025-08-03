@@ -70,7 +70,7 @@ def take_home_salary(CTC, regime):
         "Net Take-Home(Monthly)":f"₹{round(net_salary/12,2)}"
     }
 with st.container():
-    st.title("India Salery Tax Calcurlator")
+    st.title("India Salary Tax Calculator")
     #Input of salery
     salary=st.number_input("Enter Your annual CTC (₹):", min_value=0, step=10000)
     #Tab creation
