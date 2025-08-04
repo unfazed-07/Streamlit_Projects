@@ -63,14 +63,14 @@ def take_home_salary(CTC, regime):
     return {
         "CTC": f"₹{CTC}",
         "Taxable Income":f"₹{taxable_income:.2f}",
-        "Income Tax":f"₹{income_tax:.2f} (estimated)",
+        "Income Tax (Including Cess)":f"₹{income_tax:.2f} (estimated)",
         "EPF deduction":f"₹{epf_ded:.2f}",
         "Professional Tax":f"₹{professional_tax:.2f}",
         "Net Take-Home(Yearly)":f"₹{round(net_salary,2)}",
         "Net Take-Home(Monthly)":f"₹{round(net_salary/12,2)}"
     }
 with st.container():
-    st.title("India Salary Tax Calculator")
+    st.header("Income Tax Breakdown Calculator")
     #Input of salery
     salary=st.number_input("Enter Your annual CTC (₹):", min_value=0, step=10000)
     #Tab creation
@@ -89,4 +89,5 @@ with st.container():
                 for k, v in breakdown.items():
                     st.write(f"{k}: {v}")
     else:
-        st.warning("Please enter your Annual CTC.")
+        if st.button("View Breakdown"):
+            st.warning("Please enter your Annual CTC.")
